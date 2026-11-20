@@ -15,7 +15,7 @@ $conn->query("SET NAMES UTF8");
 
 $sql = "INSERT INTO livres (titre, auteur, genre, proprio) VALUES ('$titre', '$auteur', '$genre', '$proprio')";
 if ($conn->query($sql) === TRUE) {
-    echo "Livre ajouté avec succès.";
+    echo "Livre ajouté.";
 } else {
     echo "Erreur: " . $sql . "<br>" . $conn->error;
 }
